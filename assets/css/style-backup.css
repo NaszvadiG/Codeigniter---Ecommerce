@@ -1,0 +1,444 @@
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: CGW-PHIT-Ian <ian.moreno@comgateway.com>
+ * Date: 9/9/16 10:13 AM
+ * Description: style.css
+ */
+@charset "utf-8";
+.JSProduct {
+    display: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.notice {
+    background: #F24B4B;
+    color: #fff;
+    text-align: center;
+}
+.notice p {
+    padding: 10px 0;
+    margin: 0;
+}
+
+/** Header **/
+.content-head {
+    display: block;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    border-top: 3px solid #F24B4B;
+    z-index: 5
+}
+
+.toolbar a {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #454545;
+    padding: 0 15px;
+    margin-right: -4px;
+    border-right: 2px solid #e9e9e9;
+}
+.toolbar nav:last-child a#shopping-cart {
+    font-size: 24px;
+    border-right: none;
+}
+.toolbar nav:last-child a#shopping-cart .badge {
+    margin-top: -24px;
+    margin-left: -12px;
+    background: #F24B4B;
+}
+.toolbar nav:last-child a:last-child {
+    font-size: 18px;
+    border-right: none;
+    display: none;
+}
+#shop-us > span + span,
+#shop-thai > span + span {
+    display: none;
+}
+
+.toolbar a,
+.menubar a {
+    font-size: 15px;
+}
+.toolbar nav,
+.toolbar a,
+.menubar nav,
+.menubar a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0;
+}
+.menubar {
+    position: relative;
+    border-top: 2px solid #e9e9e9;
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 5px -5px #000;
+}
+.menubar a.logo {
+    float: left;
+    margin-left: -15px;
+    margin-right: -230px;
+}
+.menubar a {
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    color: #454545;
+    padding: 0 10px;
+    margin-right: -4px;
+    -webkit-transition: height 300ms ease-in-out, line-height 300ms ease-in-out;
+    -moz-transition: height 300ms ease-in-out, line-height 300ms ease-in-out;
+    -o-transition: height 300ms ease-in-out, line-height 300ms ease-in-out;
+    transition: height 300ms ease-in-out, line-height 300ms ease-in-out;
+}
+
+.menubar a.active hr {
+    border: 2px solid #F24B4B;
+    margin-top: -16px;
+}
+
+
+/*.menubar > a:last-child {
+    font-size: 20px;
+    margin-right: 5px;
+    display: none;
+}*/
+.menubar.active a {
+    height: 60px;
+    line-height: 60px;
+}
+.menubar #menu span {
+    display: inline-block;
+}
+.menubar #menu span:hover > nav {
+    display: block;
+}
+.menubar #menu span > nav {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+.menubar #menu span > nav,
+.menubar #menu span > nav a {
+    width: 200px;
+}
+.menubar #menu span > nav a {
+    text-align: left;
+    display: block;
+    font-size: 15px;
+    line-height: 32px;
+    height: 32px;
+    -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.menubar #menu span nav a.active,
+.menubar #menu span > nav a:hover {
+    background-color: rgb(242, 75, 75);
+    color: #fff;
+}
+.menubar #menu span nav a hr {
+    display: none;
+}
+.menubar .searchbar {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 2px 15px 2px 30px;
+    margin-top: 24px;
+    margin-right: 15px;
+    background: #fff;
+    margin-left: -400px;
+    -webkit-transition: width 300ms ease-in-out, margin 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out, margin 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out, margin 300ms ease-in-out;
+    transition: width 300ms ease-in-out, margin 300ms ease-in-out;
+}
+.menubar.active .searchbar {
+    margin-top: 14px;
+}
+.menubar .searchbar.focused {
+    width: 240px;
+    border-color: #454545;
+}
+.menubar .searchbar.focused i {
+    color: #F24B4B;
+}
+.menubar .searchbar i {
+    position: absolute;
+    top: 6px;
+    margin-left: -20px;
+    color: #888;
+}
+.menubar .searchbar input {
+    width: 100%;
+    height: 23px;
+    padding-top: 0;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+
+.menubar .searchbar input + div {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    margin-left: -30px;
+    margin-top: 4px;
+
+}
+
+.menubar .searchbar input + div > a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 32px;
+    height: 32px;
+    -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.menubar .searchbar input + div > a.active,
+.menubar .searchbar input + div > a:hover {
+    background-color: rgb(242, 75, 75);
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .toolbar nav:last-child a:last-child {
+        display: inline-block;
+        margin-left: -15px;
+    }
+
+    #shop-us > span,
+    #shop-thai > span {
+        display: none;
+    }
+    #shop-us > span + span,
+    #shop-thai > span + span {
+        display: inline-block;
+    }
+    .menubar {
+        /*position: static;*/
+        text-align: left;
+    }
+    .menubar #menu {
+        display: block;
+        position: absolute;
+        width: 0;
+        /*top: 0;*/
+        right: 0;
+        background: rgba(10,10,10,0.8);
+        padding: 10px 0;
+        overflow: hidden;
+        z-index: 2;
+        -webkit-transition: width 300ms ease-in-out;
+        -moz-transition: width 300ms ease-in-out;
+        -o-transition: width 300ms ease-in-out;
+        transition: width 300ms ease-in-out;
+    }
+    .menubar.active-menu #menu {
+        width: 280px;
+    }
+    .menubar #menu a {
+        display: block;
+        width: 280px;
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+        padding: 0 20px;
+    }
+    .menubar a.logo {
+        float: none;
+    }
+    .toolbar nav.pull-right a:not(:nth-child(n+3)) {
+        display: none;
+    }
+
+}
+@media (max-width: 405px) {
+    .menubar > a:last-child {
+        height: 50px;
+        line-height: 50px;
+        margin-top: -52px;
+    }
+    .toolbar nav:first-child {
+        margin-right: -100px;
+    }
+    .toolbar nav a {
+        padding: 0 10px;
+    }
+}
+
+/* Prompt popup display */
+/* Note: No yet responsive */
+.prompt {
+    position: fixed;
+    display: none;
+}
+.prompt.prompt-overlay.prompt-form-active,
+.prompt.prompt-overlay.prompt-alert-active,
+.prompt.prompt-overlay.prompt-loading-active,
+.prompt.prompt-form.active,
+.prompt.prompt-alert.active,
+.prompt.prompt-loading.active {
+    display: block;
+}
+.prompt.prompt-overlay.prompt-form-active,
+.prompt.prompt-overlay.prompt-alert-active,
+.prompt.prompt-overlay.prompt-loading-active {
+    background-color: rgba(0,0,0,0.75);
+}
+.prompt.prompt-overlay {
+    background-color: rgba(0,0,0,0);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+}
+.prompt.prompt-overlay.prompt-form-active {
+    z-index: 1000;
+}
+.prompt.prompt-form.active {
+    z-index: 1001;
+}
+.prompt.prompt-overlay.prompt-alert-active {
+    z-index: 1010;
+}
+.prompt.prompt-alert.active {
+    z-index: 1011;
+}
+.prompt.prompt-overlay.prompt-loading-active {
+    z-index: 1100;
+}
+.prompt.prompt-loading.active {
+    z-index: 1101;
+}
+.prompt .prompt-content {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+    background: #fff;
+}
+.prompt-content a.prompt-close {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    font-weight: 200;
+    color: #000;
+    padding: 0 15px;
+    z-index: 1;
+}
+.prompt-content a.prompt-close:hover {
+    color: #F24B4B;
+}
+.prompt.prompt-loading,
+.prompt.prompt-alert,
+.prompt.prompt-form {
+    width: 100%;
+    top: 72px;
+    text-align: center;
+}
+
+
+/* Breadcrumbs */
+.breadcrumb {
+    background: #fff;
+}
+.breadcrumb li:first-child a {
+    font-size: 18px;
+}
+.breadcrumb a {
+    font-size: 13px;
+    color: #454545;
+    text-decoration: none;
+}
+.breadcrumb li.active,
+.breadcrumb a:hover {
+    font-size: 13px;
+    color: #F24B4B;
+}
+
+
+/*Content Body*/
+.content-body {
+    margin-top: 20px;
+}
+
+
+/* promoter */
+.content-promoter {
+    position: relative;
+}
+.content-promoter .owl-carousel {
+    position: relative;
+    padding-left: 0;
+}
+.content-promoter .owl-item > div {
+    width: 100%;
+    height: auto;
+}
+.content-promoter .owl-item .product-image img {
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    height: 300px;
+}
+.content-promoter a[href="#wish"] {
+    margin: 15px 25px 0;
+}
+
+.content-promoter .owl-btn {
+    position: absolute;
+    top: 43%;
+    font-size: 20px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+    padding: 0 12px 0 10px;
+    /*margin: -24px 0 0 -15px;*/
+    margin: -24px 0 0;
+    color: #fff;
+    background: #454545;
+    z-index: 1;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+}
+
+.content-promoter .owl-btn.next {
+    right: 0;
+    padding: 0 10px 0 12px;
+}
+
+.content-promoter .owl-btn:hover {
+    color: #fff;
+    background: #F24B4B;
+}

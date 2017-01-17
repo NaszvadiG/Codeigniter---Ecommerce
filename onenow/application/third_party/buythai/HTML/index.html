@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>Onenow / BuyThai</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--Added by CGW-PH-IT-Ianm <ian.moreno@comgateway.com>-->
+    <style type="text/css">
+        .banner h1.xlarge {
+            font-size: 42px;
+        }
+        #subscribe {
+            width: 172px;
+        }
+    </style>
+
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+</head>
+
+<body>
+
+
+
+<div class="modal fade hide" id="modalAds" role="dialog">
+    <div class="modal-dialog  modal-bg-1">
+        <div class="modal-body-content"><a class="close" data-dismiss="modal">&times;</a>
+
+            <div class="modal-body">
+                <div class="col-lg-6 col-sm-8 col-xs-8">
+                    <h3>Shopping From? <br>
+                        Shopping in Thailand/U.S.</h3>
+
+                    <p class="discountLg">EN/TH </p>
+
+                    <p>We invite you to subscribe to our newsletter and receive 10% discount. </p>
+
+                    <div class="clearfx">
+                        <form id="newsletter" class="newsletter">
+                            <input type="text" id="subscribe" name="s" placeholder="Enter email">
+                            <button class="subscribe-btn">Subscribe</button>
+                        </form>
+                    </div>
+                    <p><a href="category.html" class="link shoplink"> SHOP NOW <i class="fa fa-caret-right"> </i> </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fixed navbar start -->
+<div class="navbar navbar-tshop navbar-fixed-top megamenu" role="navigation">
+    <div class="container">
+        <div class="navbar-header" id="testnav">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapsem"><span
+                    class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span
+                    class="icon-bar"> </span> <span class="icon-bar"> </span></button>
+            <a class="navbar-brand " href="index.html"> <img src="images/logo.png" alt="TSHOP"> </a>
+
+            <div class="signandcart">
+                <div class="dropdown  cartMenu ">
+                    <p class="cartCount" >1</p>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="shopping-cart-icon"> </i>
+                    </a>
+                </div>
+                <div class="link-top">
+                    <a id="sell_on" href="seller">SELL ON ONENOW</a>
+                    <a id="sign_in" href="account">SIGN IN</a>
+                </div>
+            </div>
+            <!-- this part for mobile -->
+        </div>
+
+        <div class="menu-mobile-thai navbar-collapsem collapse ">
+            <ul class="nav navbar-nav">
+                <li><a href="Seller_Homepage.html">SELL ON ONENOW</a></li>
+                <li><a href="account-1.html">SIGN IN</a></li>
+                <li class="active"><a href="#"> SATICT </a></li>
+                <li class="active"><a href="#"> LEADING BRANDS </a></li>
+                <li class="active"><a href="#"> Home </a></li>
+                <li class="active"><a href="#"> APPAREL </a></li>
+                <li class="active"><a href="#"> SHOES </a></li>
+                <li class="active"><a href="#"> HANDBAGS & ACCESSORIES </a></li>
+                <li class="active"><a href="#"> ARTS & CRAFT </a></li>
+                <li class="active"><a href="#"> GIFT REGISTRY </a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile-us collapse ">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"> MEN </a></li>
+                <li class="active"><a href="#"> WOMEN </a></li>
+                <li class="active"><a href="#"> KIDS </a></li>
+                <li class="active"><a href="#"> GIFT REGISTRY </a></li>
+            </ul>
+        </div>
+
+                <div class="topline" ></div>
+
+        <!-- this part is duplicate from cartMenu  keep it for mobile -->
+        <div class="navbar-cart  collapse">
+            <div class="cartMenu  col-lg-4 col-xs-12 col-md-4 ">
+                <div class="w100 miniCartTable scroll-pane">
+                    <table>
+                        <tbody>
+                        <tr class="miniCartProduct">
+                            <td style="width:20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="width:40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="width:5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="width:20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/2.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="width:40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="width:5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="width:20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/5.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="width:40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="width:5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="width:20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="width:40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="width:5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="width:20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/3.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="width:40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="width:5%" class="delete"><a> x </a></td>
+                        </tr>
+                        <tr class="miniCartProduct">
+                            <td style="width:20%" class="miniCartProductThumb">
+                                <div><a href="product-details.html"> <img src="images/product/4.jpg" alt="img"> </a>
+                                </div>
+                            </td>
+                            <td style="width:40%">
+                                <div class="miniCartDescription">
+                                    <h4><a href="product-details.html"> TSHOP T shirt Black </a></h4>
+                                    <span class="size"> 12 x 1.5 L </span>
+
+                                    <div class="price"><span> $8.80 </span></div>
+                                </div>
+                            </td>
+                            <td style="width:10%" class="miniCartQuantity"><a> X 1 </a></td>
+                            <td style="width:15%" class="miniCartSubtotal"><span> $8.80 </span></td>
+                            <td style="width:5%" class="delete"><a> x </a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--/.miniCartTable-->
+
+                <div class="miniCartFooter  miniCartFooterInMobile text-right">
+                    <h3 class="text-right subtotal"> Subtotal: $210 </h3>
+                    <a class="btn btn-sm btn-danger" href="cart.html"> <i class="fa fa-shopping-cart"> </i> VIEW CART
+                    </a> <a href="checkout-0.html"
+                            class="btn btn-sm btn-primary"> CHECKOUT </a></div>
+                <!--/.miniCartFooter-->
+
+            </div>
+            <!--/.cartMenu-->
+        </div>
+        <!--/.navbar-cart-->
+
+        <div class="top-menu">
+            <div class="top-menu-div">
+                <div class="navbar-collapse1 collapse1 menu-country" style="float:left">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#us" id="menu-us">SHOP U.S.</a></li>
+                        <li><a href="#thailand" id="menu-thai" class="sub-selected">SHOP THAILAND</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse1 collapse1 menu-sub-thai" >
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown megamenu-40width "><a data-toggle="dropdown" class="dropdown-toggle" href="#"> <p>SACICT</p> </a>
+                            <ul class="dropdown-menu">
+                                <li class="megamenu-content">
+
+                                    <!-- megamenu-content -->
+
+                                    <ul class="col-lg-3  col-sm-3 col-md-3  unstyled noMarginLeft">
+                                        <li>
+                                            <h5> ARTISAN </h5>
+                                        </li>
+                                        <li><a href="#"> The Master </a></li>
+                                        <li><a href="#"> Next Generation </a></li>
+                                        <li><a href="#">  </a></li>
+                                        <li><a href="#">  </a></li>
+                                        <li><a href="#">  </a></li>
+                                    </ul>
+                                    <ul class="col-lg-3  col-sm-3 col-md-3  unstyled noMarginLeft">
+                                        <li>
+                                            <h5> PROJECTS </h5>
+                                        </li>
+                                        <li><a href="#"> Prototype </a></li>
+                                        <li><a href="#"> Sustainable Art </a></li>
+                                        <li><a href="#"> Design & Object </a></li>
+                                        <li><a href="#"> Innovative Craft Award </a></li>
+                                    </ul>
+                                    <ul class="col-lg-3  col-sm-3 col-md-3  unstyled noMarginLeft">
+                                        <li>
+                                            <h5> CATEGORY </h5>
+                                        </li>
+                                        <li><a href="#"> Home Decor </a></li>
+                                        <li><a href="#"> Paintings </a></li>
+                                        <li><a href="#"> Furniture </a></li>
+                                        <li><a href="#"> Basketry </a></li>
+                                        <li><a href="#"> Craft </a></li>
+                                    </ul>
+                                    <ul class="col-lg-3  col-sm-3 col-md-3  unstyled noMarginLeft">
+                                        <li>
+                                            <h5>   </h5> <br>
+                                        </li>
+                                        <li><a href="#"> Utensils </a></li>
+                                        <li><a href="#"> Accessories </a></li>
+                                        <li><a href="#"> Others </a></li>
+                                        <li><a href="#">  </a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li ><a href="#">LEADING BRANDS</a></li>
+                        <li><a href="#" >HOME</a></li>
+                        <li><a href="#" >APPAREL</a></li>
+                        <li><a href="#" >SHOES</a></li>
+                        <li><a href="#" >HANDBAGS & ACCESSORIES</a></li>
+                        <li><a href="#" >ARTS & CRAFT</a></li>
+                        <li><a href="#" >GIFT REGISTRY</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-collapse1 collapse1 menu-sub-us" style="display: none !important;">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" >MEN</a></li>
+                        <li><a href="#" >WOMEN</a></li>
+                        <li><a href="#" >KIDS</a></li>
+                        <li><a href="#" >GIFT REGISTRY</a></li>
+
+                    </ul>
+                </div>
+
+                <!--<div class="navbar-collaps1e collapse1 menu-search" style="float:right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown megamenu-40width " ><a id="btn-searcher" data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+                            <ul class="dropdown-menu" style="width: 50%; left: 25%;">
+                                <li class="megamenu-content">
+                                    <input type="search" class="float-left form-control" placeholder="SEARCH" style="width: calc(100% - 30px); color: black"><i class="fa fa-search float-right" style="font-size: 25px;"></i>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="navbar-collaps1e collapse1 menu-search-for-mobile" >
+                    <input type="search" class="float-left form-control" placeholder="SEARCH" style="width: calc(100% - 30px); color: black"><i class="fa fa-search float-right" style="font-size: 25px; margin-top:3px;"></i>
+                </div>-->
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- /.Fixed navbar  -->
+
+<div class="banner">
+    <div class="full-container">
+        <div class="slider-content">
+                <div class="slider-item slider-item-img1">
+                    <div class="sliderInfo">
+                        <div class="container">
+                            <div class="col-lg-12 col-md-12 col-sm-12 sliderTextFull ">
+                                <div class="inner">
+                                    <div class="">
+                                        <h1 class="xlarge">ONE is simple</h1>
+                                        <h1 class="xlarge">NOW it's possible</h1>
+                                        <div class="search-full ">
+
+                                            <div class="searchInputBox ">
+                                                <input type="search" data-searchurl="search?=" name="q" placeholder="Shopping for"
+                                                       class="search-input">
+                                                <button class="btn-nobg search-btn" type="submit"><i class="fa fa-search"> </i></button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/slider/main_banner.png" class="img-responsive parallaximg sliderImg" alt="img">
+                </div>
+        </div>
+        <!--/.slider-content-->
+    </div>
+    <!--/.full-container-->
+</div>
+<!--/.banner style1-->
+
+<div class="pre-banner">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 ">
+            <div class="row pre-div" >
+                <img src="images/icon_lady.png">
+                <div class=" desc" >
+                    <h4>Get something you love</h4>
+                    <p>Our marketplace is a world of vintage and handmade goods</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 ">
+            <div class="pre-div" >
+                <img src="images/icon_men.png">
+                <div class="desc">
+                    <h4>Get something you love</h4>
+                    <p>Our marketplace is a world of vintage and handmade goods</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="pre-div" >
+                <img src="images/icon_buysafely.png">
+                <div class="desc">
+                    <h4>Get something you love</h4>
+                    <p>Our marketplace is a world of vintage and handmade goods</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-container">
+
+    <!-- Main component call to action -->
+
+
+    <div class="row featuredPostContainer globalPadding style2">
+        <h3 class="section-title style2 text-center"><span>NEW ARRIVALS</span></h3>
+
+        <div id="productslider" class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/34.jpg" alt="img"
+                                                            class="img-responsive"></a>
+
+                        <div class="promotion"><span class="new-product"> NEW</span> <span
+                                class="discount">15% OFF</span></div>
+                    </div>
+                    <div class="description">
+                        <h4><a href="product-details.html">consectetuer adipiscing </a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/30.jpg" alt="img"
+                                                            class="img-responsive"></a>
+
+                        <div class="promotion"><span class="discount">15% OFF</span></div>
+                    </div>
+                    <div class="description">
+                        <h4><a href="product-details.html">luptatum zzril delenit</a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/36.jpg" alt="img"
+                                                            class="img-responsive"></a>
+
+                        <div class="promotion"><span class="new-product"> NEW</span></div>
+                    </div>
+                    <div class="description">
+                        <h4><a href="product-details.html">eleifend option </a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/9.jpg" alt="img" class="img-responsive"></a>
+                    </div>
+                    <div class="description">
+                        <h4><a href="product-details.html">mutationem consuetudium </a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/12.jpg" alt="img"
+                                                            class="img-responsive"></a></div>
+                    <div class="description">
+                        <h4><a href="product-details.html">sequitur mutationem </a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/13.jpg" alt="img"
+                                                            class="img-responsive"></a></div>
+                    <div class="description">
+                        <h4><a href="product-details.html">consuetudium lectorum.</a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/21.jpg" alt="img"
+                                                            class="img-responsive"></a></div>
+                    <div class="description">
+                        <h4><a href="product-details.html">parum claram</a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/24.jpg" alt="img"
+                                                            class="img-responsive"></a></div>
+                    <div class="description">
+                        <h4><a href="product-details.html">duis dolore </a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+                       data-placement="left">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </a>
+
+                    <div class="image">
+                        <div class="quickview">
+                            <a data-toggle="modal" class="btn btn-xs btn-quickview" href="ajax/product.html"
+                               data-target="#productSetailsModalAjax">Quick View </a>
+                        </div>
+                        <a href="product-details.html"><img src="images/product/15.jpg" alt="img"
+                                                            class="img-responsive"></a></div>
+                    <div class="description">
+                        <h4><a href="product-details.html">feugait nulla facilisi</a></h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <span class="size">XL / XXL / S </span></div>
+                    <div class="price"><span>$25</span></div>
+                    <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                            class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                </div>
+            </div>
+        </div>
+        <!--/.productslider-->
+
+    </div>
+    <!--/.featuredPostContainer-->
+</div>
+<!-- /main container -->
+
+<div class="parallax-section parallax-image-1">
+    <div class="container">
+        <div class="row ">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="parallax-content clearfix">
+
+
+                    <h2 class="uppercase">FREE INTERNATIONAL SHIPPING! Get Free Shipping Coupons</h2>
+
+                    <h3> </h3>
+
+                    <div style="clear:both"></div>
+                    <a class="btn btn-discover " style="margin-top: 30px"> SHOP NOW </a></div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</div>
+<!--/.parallax-image-1-->
+
+<div class="container main-container">
+
+
+    <!-- Main component call to action -->
+
+    <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
+        <div class="container">
+            <div class="row">
+                <div class="load-more-block text-center"><a class="btn btn-thin" href="#"> <i
+                        class="fa fa-plus-sign">+</i> load more products</a></div>
+            </div>
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.featuredPostContainer-->
+
+    <hr class="no-margin-top">
+    <div class="width100 section-block ">
+        <div class="row featureImg">
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="category.html"><img src="images/site/new-collection-1.jpg"
+                                                                                 class="img-responsive" alt="img"></a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="category.html"><img src="images/site/new-collection-2.jpg"
+                                                                                 class="img-responsive" alt="img"></a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="category.html"><img src="images/site/new-collection-3.jpg"
+                                                                                 class="img-responsive" alt="img"></a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="category.html"><img src="images/site/new-collection-4.jpg"
+                                                                                 class="img-responsive" alt="img"></a>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.section-block-->
+
+    <div class="width100 section-block">
+        <h3 class="section-title"><span> BRAND</span> <a id="nextBrand" class="link pull-right carousel-nav"> <i
+                class="fa fa-angle-right"></i></a> <a id="prevBrand" class="link pull-right carousel-nav"> <i
+                class="fa fa-angle-left"></i> </a></h3>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="no-margin brand-carousel owl-carousel owl-theme">
+                    <li><a><img src="images/brand/1.gif" alt="img"></a></li>
+                    <li><img src="images/brand/2.png" alt="img"></li>
+                    <li><img src="images/brand/3.png" alt="img"></li>
+                    <li><img src="images/brand/4.png" alt="img"></li>
+                    <li><img src="images/brand/5.png" alt="img"></li>
+                    <li><img src="images/brand/6.png" alt="img"></li>
+                    <li><img src="images/brand/7.png" alt="img"></li>
+                    <li><img src="images/brand/8.png" alt="img"></li>
+                    <li><img src="images/brand/1.gif" alt="img"></li>
+                    <li><img src="images/brand/2.png" alt="img"></li>
+                    <li><img src="images/brand/3.png" alt="img"></li>
+                    <li><img src="images/brand/4.png" alt="img"></li>
+                    <li><img src="images/brand/5.png" alt="img"></li>
+                    <li><img src="images/brand/6.png" alt="img"></li>
+                    <li><img src="images/brand/7.png" alt="img"></li>
+                    <li><img src="images/brand/8.png" alt="img"></li>
+                </ul>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.section-block-->
+
+</div>
+<!--main-container-->
+
+
+<!-- Product Details Modal  -->
+<!-- Modal -->
+<div class="modal fade" id="productSetailsModalAjax" tabindex="-1" role="dialog"
+     aria-labelledby="productSetailsModalAjaxLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- End Modal -->
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row text-align-center margin-top50 brief-info">
+                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-4">
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-4">
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                    <h3> Support </h3>
+                    <ul>
+                        <li><a href="account.html"> My Account </a></li>
+                        <li><a href="my-address.html"> My Address </a></li>
+                        <li><a href="wishlist.html"> Wish List </a></li>
+                        <li><a href="order-list.html"> Order list </a></li>
+                        <li><a href="order-status.html"> Order Status </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Shop </h3>
+                    <ul>
+                        <li><a href="#">
+                            U.S.
+                        </a></li>
+                        <li><a href="#">
+                            Thailand</a></li>
+                        </a></li>
+
+                    </ul>
+
+                </div>
+
+                <div style="clear:both" class="hide visible-xs"></div>
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> My Account </h3>
+                    <ul>
+                        <li><a href="account.html"> My Account </a></li>
+                        <li><a href="my-address.html"> My Address </a></li>
+                        <li><a href="wishlist.html"> Wish List </a></li>
+                        <li><a href="order-list.html"> Order list </a></li>
+                        <li><a href="order-status.html"> Order Status </a></li>
+                    </ul>
+                </div>
+
+                <div style="clear:both" class="hide visible-xs"></div>
+
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                    <h3> Stay in touch </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsLatterBox text-center">
+                                <input type="text" class="full text-center" placeholder="Email ">
+                                <button class="btn  bg-gray" type="button"> Subscribe <i
+                                        class="fa fa-long-arrow-right"> </i></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="http://facebook.com"> <i class=" fa fa-facebook"> &nbsp; </i> </a></li>
+                        <li><a href="http://twitter.com"> <i class="fa fa-twitter"> &nbsp; </i> </a></li>
+                        <li><a href="https://plus.google.com"> <i class="fa fa-google-plus"> &nbsp; </i> </a></li>
+                        <li><a href="http://youtube.com"> <i class="fa fa-pinterest"> &nbsp; </i> </a></li>
+                        <li><a href="http://youtube.com"> <i class="fa fa-youtube"> &nbsp; </i> </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> SELL </h3>
+                    <ul class="list-unstyled footer-nav">
+                        <li><a href="#">Questions?
+                        </a></li>
+
+                        <li><a href="#"> Order Status
+                        </a></li>
+                        <li><a href="#"> Sizing Charts
+                        </a></li>
+                        <li><a href="#"> Return Policy </a></li>
+                        <li><a href="#">
+                            Contact Us
+                        </a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> &copy; ONENOW 2016. All rights reserved. </p>
+
+            <div class="pull-right paymentMethodImg"><img height="30" class="pull-right"
+                                                          src="images/ship1.png" alt="img">
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    // this script required for subscribe modal
+    $(window).load(function () {
+        // full load
+        $('#modalAds').modal('show');
+        $('#modalAds').removeClass('hide');
+    });
+
+    $(".menu-country li").click(function(e) {
+        // Added by CGW-PH-IT-Ianm <ian.moreno@comgateway.com>
+        //e.preventDefault();
+        if(e.target.id == "menu-us"){
+            $('#menu-us').addClass("sub-selected");
+            $('#menu-thai').removeClass("sub-selected");
+            $('.menu-sub-us').css('cssText', 'display: inline-block !important');
+            $('.menu-sub-thai').css('cssText', 'display: none !important');
+
+            $('.menu-mobile-us').addClass('navbar-collapsem');
+            $('.menu-mobile-thai').removeClass('navbar-collapsem');
+        }
+        else if (e.target.id == "menu-thai"){
+            $('#menu-us').removeClass("sub-selected");
+            $('#menu-thai').addClass("sub-selected");
+            $('.menu-sub-thai').css('cssText', 'display: inline-block !important');
+            $('.menu-sub-us').css('cssText', 'display: none !important');
+            $('.menu-mobile-us').removeClass('navbar-collapsem');
+            $('.menu-mobile-thai').addClass('navbar-collapsem');
+        }
+    });
+</script>
+
+<!-- include jqueryCycle plugin -->
+<script src="assets/js/jquery.cycle2.min.js"></script>
+
+<!-- include easing plugin -->
+<script src="assets/js/jquery.easing.1.3.js"></script>
+
+<!-- include  parallax plugin -->
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.js"></script>
+
+<!-- optionally include helper plugins -->
+<script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script>
+
+<!-- include mCustomScrollbar plugin //Custom Scrollbar  -->
+
+<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+
+<!-- include icheck plugin // customized checkboxes and radio buttons   -->
+<script type="text/javascript" src="assets/plugins/icheck-1.x/icheck.min.js"></script>
+
+<!-- include grid.js // for equal Div height  -->
+<script src="assets/js/grids.js"></script>
+
+<!-- include carousel slider plugin  -->
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- jQuery select2 // custom select   -->
+
+
+<!-- include touchspin.js // touch friendly input spinner component   -->
+<script src="assets/js/bootstrap.touchspin.js"></script>
+
+<!-- include custom script for only homepage  -->
+<script src="assets/js/home.js"></script>
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+
+<script src="assets/plugins/cookie/jquery.cookie.js"></script>
+
+<script type="text/javascript">
+$(function(){
+    if ($.cookie('navshop') !== false || $.cookie('navshop') !== "")
+    {
+        $('#'+$.cookie('navshop')).click();
+        $.cookie('navshop', '');
+    }
+
+    $("#menu-us, #menu-thailand").click(function(){
+        $.cookie('navshop', $(this).attr('id'));
+    });
+});
+
+/*$(function() {
+    $('#btn-searcher').mouseenter(function(){
+        $(this).parent().addClass('open');
+        $(this).attr('aria-expanded', true);
+    });
+
+    $('#btn-searcher + ul').mouseleave(function(){
+        $('#btn-searcher').parent().removeClass('open');
+        $('#btn-searcher').attr('aria-expanded', false);
+    });
+});*/
+</script>
+</body>
+</html>

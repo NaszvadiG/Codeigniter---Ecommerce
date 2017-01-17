@@ -1,0 +1,52 @@
+.responsive-fullwidth {
+    margin: 10px auto;
+    padding: 0 10px;
+    max-width: 1300px;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+    .banner .full-container div {
+        bottom: 100px;
+        
+    }
+    .banner .full-container div h1 {
+        font-size: 40px;
+    }
+    .row.responsive-fullwidth .col-xs-12 {
+        width: 100% !important;
+    }
+    .row.responsive-fullwidth .col-sm-push-6 {
+        left: 0 !important;
+    }
+    .row.responsive-fullwidth .col-sm-pull-6 {
+        right: 0 !important;
+    }
+    .artisan-desc {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+
+@media (max-width: 572px) {
+    .banner .full-container div {
+        bottom: 50px;
+    }
+    .banner .full-container div h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .banner .full-container div h1 {
+        font-size: 24px;
+        letter-spacing: 0;
+        padding: 0;
+    }
+    .section div {
+        padding: 0 50px;
+    }
+}

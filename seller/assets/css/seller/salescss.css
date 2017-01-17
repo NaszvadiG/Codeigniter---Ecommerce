@@ -1,0 +1,10 @@
+.product_table .product a img {
+	max-width: 100px;
+}
+.item {
+	margin-left: auto;
+	margin-right: auto;
+}
+.product_table .item {
+    max-width: 150px;
+}

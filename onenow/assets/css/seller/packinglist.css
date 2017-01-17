@@ -1,0 +1,132 @@
+@page {
+    size: A4 portrait;
+    /* you can also specify margins here: */
+
+     /* for compatibility with both A4 and Letter */
+}
+
+@media screen and (max-width: 1199px){
+	body > .container{
+		padding: 0;
+		margin: 0 auto;
+	}
+	#print_container{
+		width: 1040px;
+		margin: 50px 0;
+	}
+
+}
+
+@media only screen {
+	body{
+		background-color: #656565;
+	}
+	#print_container{
+		background-color: #FFF;
+		outline: 5px solid #333;
+		margin: 50px 50px 50px 50px;
+		width: calc(100% - 100px);
+		min-height: 1400px;
+	}
+
+	#print_container .contents{
+		padding: 50px;
+	}
+
+	/*Controls*/
+
+	#print_controls.fixed{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		padding: 0 400px;
+	}
+
+	#print_controls button{
+		border: none;
+		padding: 15px 10px;
+		color: #fff;
+		background-color: #757575;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+
+	#print_controls button#printBtn{
+		background-color: #000;
+	}
+
+	#print_controls button:hover{
+		color: #757575;
+		background-color: #FFF;
+		border-width: 2px;
+		border-style: solid;
+	}
+
+	#print_controls button#printBtn:hover{
+		color: #000;
+		background-color: #FFF;
+		border-color: #000;
+	}
+}
+
+@media print and (min-width: 768px) {  
+	#print_controls{
+	    display: none;
+	}
+
+	#print_container:not(:last-child){
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	}
+
+    #print_container{
+    	width: 100%;
+    	min-height: 400mm;
+    }
+	#print_container .contents #boxLabels .boxLabel h2{
+		font-size: 20pt !important;
+		margin: 20pt 0pt 20pt 0pt !important;
+	}
+	#print_container .contents #boxLabels .boxLabel .barcode{
+		padding: 0 32% !important;
+		max-height: 140pt;
+	}
+}
+
+@media only print and (max-width: 767px) { 
+	#print_controls{
+	    display: none;
+	}
+
+	#print_container:not(:last-child){
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	}
+
+    #print_container{
+    	width: 100%;
+    	min-height: 410mm;
+    }
+	/*Barcode*/
+	#print_container .contents #boxLabels .boxLabel{
+		padding: 8pt 10pt;
+	}
+
+	#print_container .contents #boxLabels .boxLabel h2{
+		font-size: 14pt !important;
+		margin: 9pt 0pt 5pt 0pt !important;
+	}
+
+	#print_container .contents #boxLabels .boxLabel .barcode{
+		padding: 0pt 32% !important;
+	}
+	#print_container .contents #boxLabels .boxLabel .mtn{
+		margin: 1pt 0pt 0pt 0pt;
+		font-size: 12pt;
+	}
+}

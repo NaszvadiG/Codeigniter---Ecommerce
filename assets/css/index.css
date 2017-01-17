@@ -1,0 +1,235 @@
+/**
+ * Created by IntelliJ IDEA.
+ * User: CGW-PHIT-Ian <ian.moreno@comgateway.com>
+ * Date: 10/22/16 12:47 AM
+ * Description: style.css
+ */
+@charset "utf-8";
+
+#content-banners {
+    position: relative;
+    margin: 20px 0 30px;
+    padding: 0 10px;
+}
+#content-banners .carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+#content-banners .carousel-indicators {
+    bottom: -40px;
+    z-index: 0;
+}
+#content-banners .carousel-indicators li.active,
+#content-banners .carousel-indicators li {
+    height: 9px;
+    width: 9px;
+    background: #454545;
+    border: 0;
+    margin: 0 2px;
+}
+#content-banners .carousel-indicators li.active {
+    background: #F24B4B;
+}
+#content-banners .carousel-caption {
+    text-align: left;
+    left: 8%;
+    right: 8%;
+    z-index: 1;
+    bottom: 48px;
+}
+#content-banners .carousel-caption h2 {
+    text-shadow: 1px 1px 3px #000;
+    font-weight: 700;
+    font-size: 36px
+}
+#content-banners .carousel-caption a:hover,
+#content-banners .carousel-caption a {
+    width: 140px;
+    background: #F24B4B;
+    border-color: #F24B4B;
+    border-radius: 0;
+    font-size: 16px;
+}
+@media(max-width:992px) {
+    #content-banners .carousel-caption {
+        left: 13%;
+        right: 13%;
+        bottom: 36px;
+    }
+}
+@media(max-width:767px){
+    #content-banners .carousel-caption {
+        left: 10%;
+        right: 10%;
+        bottom: 48px;
+    }
+    #content-banners .carousel-caption h2 {
+        font-size: 30px
+    }
+}
+@media(max-width:560px){
+    #content-banners .carousel-caption {
+        left: 10%;
+        right: 10%;
+        bottom: 28px;
+    }
+    #content-banners .carousel-caption h2 {
+        font-size: 24px
+    }
+}
+@media(max-width:480px){
+    #content-banners {
+        padding: 0 10px;
+    }
+    #content-banners .carousel-caption {
+        left: 10%;
+        right: 10%;
+        bottom: -10px;
+    }
+    #content-banners .carousel-caption h2 {
+        font-size: 20px
+    }
+    #content-banners .carousel-caption a:hover,
+    #content-banners .carousel-caption a {
+        width: 140px;
+        background: #F24B4B;
+        border-color: #F24B4B;
+        border-radius: 0;
+        font-size: 12px;
+    }
+}
+#content-explore,
+#content-explore .row,
+#content-explore .row > div {
+    margin: 0;
+    padding: 0;
+}
+#content-deal h2,
+#content-explore h2,
+#content-curator h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#content-explore .row > div {
+    position: relative;
+}
+#content-explore a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+    text-align: center;
+    top: 80%;
+    text-decoration: none;
+    -webkit-transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+    -moz-transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+    -o-transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+    transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+}
+
+#content-explore a:hover,
+#content-explore img:hover + a {
+    font-size: 28px;
+    top: 70%;
+}
+
+
+#content-deal {
+    margin-bottom: 15px;
+}
+#content-deal img {
+    margin: 0 auto;
+}
+#content-deal .deal-info h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+#content-deal a.btn:hover,
+#content-deal a.btn {
+    width: 140px;
+    background: #F24B4B;
+    border-color: #F24B4B;
+    border-radius: 0;
+    font-size: 16px;
+}
+#content-deal .deal-seller {
+    display: block;
+    margin: 15px 0 30px;
+    color: #777;
+}
+#content-deal .deal-price-sale + span,
+#content-deal .deal-price-sale {
+    display: inline-block;
+    vertical-align: top;
+}
+#content-deal .deal-price-sale {
+    font-size: 30px;
+    font-weight: 600;
+    color: #F24B4B;
+    margin-right: 5px;
+}
+#content-deal .deal-price-sale + span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#content-deal .deal-price-save {
+    color: #900;
+    font-size: 20px;
+    font-weight: 600;
+}
+#content-deal .deal-count-down {
+    margin: 15px 0 5px;
+    font-size: 20px;
+
+}
+#content-deal .deal-count-down span {
+    color: #F24B4B;
+    margin-left: 15px;
+}
+
+#content-explore img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto 10px;
+}
+
+#limited {
+    margin-bottom: 20px;
+}
+#limited .product-info img {
+    display: block;
+    margin: 0 auto 5px;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+#limited .product-box {
+    height: 480px;
+}
+#curated .product-image,
+#curated img {
+    height: 320px;
+    width: auto;
+}
+#curated a[href="#quick-view"],
+#curated a[href="#wish"] {
+    display: none;
+}
+#curated .product-info a {
+    font-size: 20px;
+}
+#curated .product-info label {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#curated .owl-item .product-price {
+    font-size: 13px;
+}

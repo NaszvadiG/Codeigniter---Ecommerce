@@ -1,0 +1,101 @@
+
+.sp-wrap {
+    display: none;
+    line-height: 0;
+    width: 40vw;
+    min-height: 40vw;
+    float: none;
+    margin: auto;
+    font-size: 0;
+    background: white;
+    position: relative;
+    border: 1px solid #E4E4E4;
+}
+
+.sp-large {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sp-large a img {
+    max-width: 100%;
+    height: auto;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+}
+
+.sp-large a {
+    display: inline-block;
+}
+
+.sp-thumbs {
+    width: 100%;
+    text-align: left;
+}
+
+.sp-thumbs img {
+    width: 50px;
+    height: 50px;
+}
+
+.sp-thumbs a:link, .sp-thumbs a:visited {
+    border: 2px solid #eee;
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sp-thumbs a:hover, .sp-thumbs a:active, .sp-current {
+    border: 2px solid #F24B4B;
+}
+
+.sp-zoom {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: zoom;
+    cursor: -webkit-zoom-out;
+    cursor: -moz-zoom-out;
+    display: none;
+}
+
+/*** CUSTOM THUMBNAIL || PRODUCT STYLE 3 **/
+
+.productThumb {
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+}
+
+.productThumb .sp-thumbs {
+    bottom: auto !important;
+    position: relative;
+    right: 0 !important;
+    text-align: left;
+    width: 100% !important;
+    z-index: 70;
+}
+
+.productThumb .sp-thumbs img {
+    width: 50px;
+    height: 50px;
+}
+
+.productThumb .sp-thumbs a:link, .productThumb .sp-thumbs a:visited {
+    border: 2px solid #eee;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+.productThumb .sp-thumbs a:hover, .sp-thumbs a:active, .sp-current, .productThumb .sp-thumbs a {
+    border: 2px solid #F24B4B;
+    margin-right: 10px !important;
+}
+
+.style3 .sp-large {
+    border: 1px solid #dddddd;
+    max-width: 100% !important;
+
+}

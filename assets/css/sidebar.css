@@ -1,0 +1,170 @@
+.sidebar {
+    margin-bottom: 30px;
+}
+.sidebar > label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0;
+    color: #454545;
+    border-top: 1px solid #ddd;
+}
+.sidebar > label > i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: -8px 10px 0 0;
+}
+.sidebar nav > input[type=radio] + label > i.fa-caret-down,
+.sidebar nav > input[type=radio]:checked + label > i.fa-caret-right,
+.sidebar nav > input[type=radio],
+.sidebar nav > input[type=checkbox] + label > i.fa-caret-down,
+.sidebar nav > input[type=checkbox]:checked + label > i.fa-caret-right,
+.sidebar nav > input[type=checkbox],
+.sidebar > input[type=checkbox]:disabled + label > i:first-child,
+.sidebar > input[type=checkbox]:checked + label > i:first-child,
+.sidebar > input[type=checkbox] {
+    display: none;
+}
+.sidebar > input[type=checkbox]:disabled + label {
+    cursor: auto;
+}
+.sidebar nav > nav,
+.sidebar > div {
+    font-size: 15px;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 250ms ease-out, padding-bottom 100ms ease-out 100ms;
+    -moz-transition: max-height 250ms ease-out, padding-bottom 100ms ease-out 100ms;
+    -o-transition: max-height 250ms ease-out, padding-bottom 100ms ease-out 100ms;
+    transition: max-height 250ms ease-out, padding-bottom 100ms ease-out 100ms;
+}
+.sidebar > input[type=checkbox]:checked + label + div {
+    padding-bottom: 20px;
+}
+.sidebar nav > input[type=radio]:checked + label + nav,
+.sidebar nav > input[type=checkbox]:checked + label + nav,
+.sidebar > input[type=checkbox]:checked + label + div {
+    max-height: 2000px;
+    -webkit-transition: max-height 500ms ease-in, padding-bottom 100ms ease-in 100ms;
+    -moz-transition: max-height 500ms ease-in, padding-bottom 100ms ease-in 100ms;
+    -o-transition: max-height 500ms ease-in, padding-bottom 100ms ease-in 100ms;
+    transition: max-height 500ms ease-in, padding-bottom 100ms ease-in 100ms;
+}
+.sidebar nav a:hover,
+.sidebar nav a {
+    color: #454545;
+}
+.sidebar nav > label > i {
+    font-size: 12px;
+    right: 0;
+    top: 50%;
+    margin: -6px 6px 0 0;
+}
+.sidebar nav > input[type=radio]:checked + label > i.fa-caret-down,
+.sidebar nav > input[type=radio] + label > i.fa-caret-right,
+.sidebar nav > input[type=checkbox]:checked + label > i.fa-caret-down,
+.sidebar nav > input[type=checkbox] + label > i.fa-caret-right {
+    display: inline;
+}
+.sidebar nav > label,
+.sidebar nav > a {
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    height: 34px;
+    line-height: 34px;
+    margin: 0;
+    border-top: 1px solid #eaeaea;
+}
+.sidebar nav > label {
+    padding-left: 12px;
+}
+.sidebar nav > nav > label {
+    padding-left: 32px;
+}
+.sidebar nav > nav > nav > label {
+    padding-left: 52px;
+}
+.sidebar nav > nav > nav > nav > a {
+    padding-left: 82px;
+}
+.sidebar nav > nav > nav > a {
+    padding-left: 68px;
+}
+.sidebar nav > nav > a {
+    padding-left: 48px;
+}
+.sidebar nav > nav > a,
+.sidebar nav > nav > label {
+    font-size: 13px;
+}
+.sidebar .filters {
+    padding: 0 15px;
+    overflow: hidden;
+}
+.sidebar .filters input:not([type=text]) {
+    display: none;
+}
+.sidebar .filters label {
+    display: block;
+    font-weight: normal;
+    margin: 0 0 2px 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.sidebar .filters label > span {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px;
+    margin-right: 8px;
+    -webkit-transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+    -o-transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+.sidebar .filters input:checked + label > span {
+    background-color: #F24B4B;
+    border-color: #F24B4B;
+}
+.sidebar .filters input[type=radio] + label > span {
+    border-radius: 50%;
+}
+.sidebar .filters .filter-price-range div {
+    display: inline-block;
+    margin-right: 5px;
+}
+.sidebar .filters .filter-price-range input {
+    outline: 0 none;
+    width: 60px;
+    padding: 1px 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #454545;
+}
+.sidebar .filters .filter-price-range input:focus {
+    border: 1px solid #F24B4B;
+}
+.sidebar .filters .filter-price-range button {
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0;
+    background: #454545;
+    border: 1px solid #454545;
+    margin: 22px 0 0 4px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 6px 10px;
+}

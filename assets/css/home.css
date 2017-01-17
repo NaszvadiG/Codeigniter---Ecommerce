@@ -1,0 +1,186 @@
+/**
+ * Created by IntelliJ IDEA.
+ * User: CGW-PHIT-Ian <ian.moreno@comgateway.com>
+ * Date: 10/22/16 12:47 AM
+ * Description: style.css
+ */
+@charset "utf-8";
+#banners {
+    position: relative;
+    margin: 20px 0 40px;
+    background: #aaa;
+}
+#banners .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#banners .carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+#banners .carousel-indicators {
+    bottom: -40px;
+    z-index: 0;
+}
+#banners .carousel-indicators li.active,
+#banners .carousel-indicators li {
+    height: 9px;
+    width: 9px;
+    background: #454545;
+    border: 0;
+    margin: 0 2px;
+}
+#banners .carousel-indicators li.active {
+    background: #F24B4B;
+}
+#banners .carousel-caption {
+    text-align: left;
+    left: 8%;
+    right: 8%;
+    z-index: 1;
+}
+#banners .carousel-caption h2 {
+    text-shadow: 1px 1px 3px #000;
+    font-weight: 700;
+    font-size: 36px
+}
+@media (max-width: 768px) {
+    #banners .carousel-caption {
+        bottom: 10px;
+    }
+    #banners .carousel-caption h2 {
+        font-size: 24px
+    }
+}
+#deals {
+    margin-top: 30px;
+}
+#deals img {
+    margin: 0 auto;
+}
+#deals .deal-info h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+#deals .deal-seller {
+    display: block;
+    margin: 15px 0 30px;
+    color: #777;
+}
+#deals .deal-price-sale + span,
+#deals .deal-price-sale {
+    display: inline-block;
+    vertical-align: top;
+}
+#deals .deal-price-sale {
+    font-size: 30px;
+    font-weight: 600;
+    color: #F24B4B;
+    margin-right: 5px;
+}
+#deals .deal-price-sale + span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#deals .deal-price-save {
+    color: #900;
+    font-size: 20px;
+    font-weight: 600;
+}
+#deals .deal-count-down {
+    margin: 15px 0 5px;
+    font-size: 20px;
+
+}
+#deals .deal-count-down span {
+    color: #F24B4B;
+    margin-left: 15px;
+}
+#deals h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#limited {
+    margin-bottom: 20px;
+}
+#limited .product-info img {
+    display: block;
+    margin: 0 auto 5px;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+
+#explored,
+#explored .row,
+#explored .row > div {
+    margin: 0;
+    padding: 0;
+}
+#explored h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#explored .row > div {
+    position: relative;
+}
+#explored a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+    text-align: center;
+    top: 72%;
+    text-decoration: none;
+    -webkit-transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+    -moz-transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+    -o-transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+    transition: top 300ms ease-in-out, font-size 300ms ease-in-out;
+}
+#explored a:hover,
+#explored img:hover + a {
+    font-size: 26px;
+    top: 75%;
+}
+#explored img {
+    width: 100%;
+    border: none;
+}
+#explored {
+    margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+    #explored a {
+        font-size: 18px;
+    }
+    #explored a:hover,
+    #explored img:hover + a {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #explored a:hover,
+    #explored img:hover + a,
+    #explored a {
+        font-size: 16px;
+        top: 70%;
+    }
+}
+@media (max-width: 480px) {
+    #explored a:hover,
+    #explored img:hover + a,
+    #explored a {
+        font-size: 14px;
+        top: 64%;
+    }
+}
